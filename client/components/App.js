@@ -1,9 +1,12 @@
 import React from 'react';
+import NavigationBar from './NavigationBar';
 
 class App extends React.Component {
   render() {
     return (
-        <h1>react reac</h1>
+      <div className="container">
+        <NavigationBar />
+      </div>
     );
     
   }
