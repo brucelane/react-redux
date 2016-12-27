@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class SignupForm extends React.Component {
   constructor(props) {
     super(props);
@@ -18,7 +19,7 @@ class SignupForm extends React.Component {
   }
   onSubmit(e) {
     e.preventDefault();
-    
+    this.props.userSignupRequest(this.state);
   }
   render() {
     return (
@@ -55,7 +56,7 @@ class SignupForm extends React.Component {
           />
         </div>
          <div className="form-group">
-          <label className="control-label">passwordConfirmation</label>
+          <label className="control-label">password confirmation</label>
           <input
             value={this.state.passwordConfirmation}
             onChange={this.onChange}
@@ -74,4 +75,7 @@ class SignupForm extends React.Component {
   }
 }
 
+SignupForm.propTypes = {
+  userSignupRequest: React.PropTypes.func.isRequired
+}
 export default SignupForm;
