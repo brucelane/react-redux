@@ -15,6 +15,7 @@ export default () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </button>
           <Link to="/" className="navbar-brand">videodromm</Link>
         </div>
