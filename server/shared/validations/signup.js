@@ -1,5 +1,6 @@
 import Validator from 'validator';
 import isEmpty from 'lodash/isEmpty';
+//import isNull from 'lodash/isNull';
 
 export default function validateInput(data) {
   let errors = {};
@@ -22,7 +23,6 @@ export default function validateInput(data) {
   if (!Validator.equals(data.password, data.passwordConfirmation)) {
     errors.passwordConfirmation = 'Passwords must match';
   }
-
 
   return {
     errors,
