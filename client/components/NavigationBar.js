@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 export default () => {
    return (
@@ -15,12 +16,12 @@ export default () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand" href="#"><h3>videodromm</h3></a>
+          <Link to="/" className="navbar-brand">videodromm</Link>
         </div>
         <div className="collapse navbar-collapse" id="collapsemenu">
           <ul className="nav navbar-nav">
             <li className="active"><a href="#">controller</a></li>
-            <li><a href="#">sign up</a></li>
+            <li><Link to="/signup">sign up</Link></li>
             <li><a href="http://batchass.videodromm.com">batchass</a></li>
             <li><a href="https://github.com/videodromm">github</a></li>
             <li><a href="http://videodromm.github.io/documentation/">about</a></li>
